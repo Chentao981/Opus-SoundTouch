@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C68FB2F21F03830900EEA34E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB2F11F03830900EEA34E /* main.m */; };
+		C68FB2F51F03830900EEA34E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB2F41F03830900EEA34E /* AppDelegate.m */; };
+		C68FB2F71F03830900EEA34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68FB2F61F03830900EEA34E /* Assets.xcassets */; };
+		C68FB2FA1F03830900EEA34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68FB2F81F03830900EEA34E /* LaunchScreen.storyboard */; };
+		C68FB3031F03832000EEA34E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3021F03832000EEA34E /* MainViewController.m */; };
+		C68FB3061F03838C00EEA34E /* AudioRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3051F03838C00EEA34E /* AudioRecord.mm */; };
+		C68FB30C1F038A8B00EEA34E /* KCLDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3091F038A8B00EEA34E /* KCLDataReader.m */; };
+		C68FB30D1F038A8B00EEA34E /* KCLDataWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB30B1F038A8B00EEA34E /* KCLDataWriter.m */; };
+		C68FB3111F038BEF00EEA34E /* KCLFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3101F038BEF00EEA34E /* KCLFileManager.m */; };
+		C6D48FAE1F04E69000745CC2 /* libSoundTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D48FAD1F04E69000745CC2 /* libSoundTouch.a */; };
+		C6D48FBF1F050B8C00745CC2 /* KCLOpusCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D48FB11F050B8C00745CC2 /* KCLOpusCodec.m */; };
+		C6D48FC01F050B8C00745CC2 /* KCLOpusDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D48FB31F050B8C00745CC2 /* KCLOpusDecoder.m */; };
+		C6D48FC11F050B8C00745CC2 /* KCLOpusEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D48FB51F050B8C00745CC2 /* KCLOpusEncoder.m */; };
+		C6D48FC21F050B8C00745CC2 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D48FBE1F050B8C00745CC2 /* libopus.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C68FB2ED1F03830900EEA34E /* AudioQueueUsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioQueueUsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68FB2F11F03830900EEA34E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C68FB2F31F03830900EEA34E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C68FB2F41F03830900EEA34E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C68FB2F61F03830900EEA34E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C68FB2F91F03830900EEA34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C68FB2FB1F03830900EEA34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68FB3011F03832000EEA34E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C68FB3021F03832000EEA34E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C68FB3041F03838C00EEA34E /* AudioRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecord.h; sourceTree = "<group>"; };
+		C68FB3051F03838C00EEA34E /* AudioRecord.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioRecord.mm; sourceTree = "<group>"; };
+		C68FB3081F038A8B00EEA34E /* KCLDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLDataReader.h; sourceTree = "<group>"; };
+		C68FB3091F038A8B00EEA34E /* KCLDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLDataReader.m; sourceTree = "<group>"; };
+		C68FB30A1F038A8B00EEA34E /* KCLDataWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLDataWriter.h; sourceTree = "<group>"; };
+		C68FB30B1F038A8B00EEA34E /* KCLDataWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLDataWriter.m; sourceTree = "<group>"; };
+		C68FB30F1F038BEF00EEA34E /* KCLFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLFileManager.h; sourceTree = "<group>"; };
+		C68FB3101F038BEF00EEA34E /* KCLFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLFileManager.m; sourceTree = "<group>"; };
+		C6D48FA71F04E69000745CC2 /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMDetect.h; sourceTree = "<group>"; };
+		C6D48FA81F04E69000745CC2 /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSampleBuffer.h; sourceTree = "<group>"; };
+		C6D48FA91F04E69000745CC2 /* FIFOSamplePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSamplePipe.h; sourceTree = "<group>"; };
+		C6D48FAA1F04E69000745CC2 /* SoundTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTouch.h; sourceTree = "<group>"; };
+		C6D48FAB1F04E69000745CC2 /* STTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTypes.h; sourceTree = "<group>"; };
+		C6D48FAD1F04E69000745CC2 /* libSoundTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoundTouch.a; sourceTree = "<group>"; };
+		C6D48FB01F050B8C00745CC2 /* KCLOpusCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLOpusCodec.h; sourceTree = "<group>"; };
+		C6D48FB11F050B8C00745CC2 /* KCLOpusCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLOpusCodec.m; sourceTree = "<group>"; };
+		C6D48FB21F050B8C00745CC2 /* KCLOpusDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLOpusDecoder.h; sourceTree = "<group>"; };
+		C6D48FB31F050B8C00745CC2 /* KCLOpusDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLOpusDecoder.m; sourceTree = "<group>"; };
+		C6D48FB41F050B8C00745CC2 /* KCLOpusEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLOpusEncoder.h; sourceTree = "<group>"; };
+		C6D48FB51F050B8C00745CC2 /* KCLOpusEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLOpusEncoder.m; sourceTree = "<group>"; };
+		C6D48FB91F050B8C00745CC2 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		C6D48FBA1F050B8C00745CC2 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		C6D48FBB1F050B8C00745CC2 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		C6D48FBC1F050B8C00745CC2 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		C6D48FBE1F050B8C00745CC2 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C68FB2EA1F03830900EEA34E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D48FC21F050B8C00745CC2 /* libopus.a in Frameworks */,
+				C6D48FAE1F04E69000745CC2 /* libSoundTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C68FB2E41F03830900EEA34E = {
+			isa = PBXGroup;
+			children = (
+				C68FB2EF1F03830900EEA34E /* AudioQueueUsing */,
+				C68FB2EE1F03830900EEA34E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C68FB2EE1F03830900EEA34E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C68FB2ED1F03830900EEA34E /* AudioQueueUsing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C68FB2EF1F03830900EEA34E /* AudioQueueUsing */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FAF1F050B8C00745CC2 /* OpusCodec */,
+				C6D48FA41F04E69000745CC2 /* SoundTouch1.8.0 */,
+				C68FB30E1F038BEF00EEA34E /* KCLFileManager */,
+				C68FB3071F038A8B00EEA34E /* KCLDataReaderWriter */,
+				C68FB2F31F03830900EEA34E /* AppDelegate.h */,
+				C68FB2F41F03830900EEA34E /* AppDelegate.m */,
+				C68FB3011F03832000EEA34E /* MainViewController.h */,
+				C68FB3021F03832000EEA34E /* MainViewController.m */,
+				C68FB2F61F03830900EEA34E /* Assets.xcassets */,
+				C68FB2F81F03830900EEA34E /* LaunchScreen.storyboard */,
+				C68FB2FB1F03830900EEA34E /* Info.plist */,
+				C68FB2F01F03830900EEA34E /* Supporting Files */,
+				C68FB3041F03838C00EEA34E /* AudioRecord.h */,
+				C68FB3051F03838C00EEA34E /* AudioRecord.mm */,
+			);
+			path = AudioQueueUsing;
+			sourceTree = "<group>";
+		};
+		C68FB2F01F03830900EEA34E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C68FB2F11F03830900EEA34E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C68FB3071F038A8B00EEA34E /* KCLDataReaderWriter */ = {
+			isa = PBXGroup;
+			children = (
+				C68FB3081F038A8B00EEA34E /* KCLDataReader.h */,
+				C68FB3091F038A8B00EEA34E /* KCLDataReader.m */,
+				C68FB30A1F038A8B00EEA34E /* KCLDataWriter.h */,
+				C68FB30B1F038A8B00EEA34E /* KCLDataWriter.m */,
+			);
+			path = KCLDataReaderWriter;
+			sourceTree = "<group>";
+		};
+		C68FB30E1F038BEF00EEA34E /* KCLFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C68FB30F1F038BEF00EEA34E /* KCLFileManager.h */,
+				C68FB3101F038BEF00EEA34E /* KCLFileManager.m */,
+			);
+			path = KCLFileManager;
+			sourceTree = "<group>";
+		};
+		C6D48FA41F04E69000745CC2 /* SoundTouch1.8.0 */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FA51F04E69000745CC2 /* include */,
+				C6D48FAC1F04E69000745CC2 /* lib */,
+			);
+			path = SoundTouch1.8.0;
+			sourceTree = "<group>";
+		};
+		C6D48FA51F04E69000745CC2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FA61F04E69000745CC2 /* SoundTouch */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C6D48FA61F04E69000745CC2 /* SoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FA71F04E69000745CC2 /* BPMDetect.h */,
+				C6D48FA81F04E69000745CC2 /* FIFOSampleBuffer.h */,
+				C6D48FA91F04E69000745CC2 /* FIFOSamplePipe.h */,
+				C6D48FAA1F04E69000745CC2 /* SoundTouch.h */,
+				C6D48FAB1F04E69000745CC2 /* STTypes.h */,
+			);
+			path = SoundTouch;
+			sourceTree = "<group>";
+		};
+		C6D48FAC1F04E69000745CC2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FAD1F04E69000745CC2 /* libSoundTouch.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C6D48FAF1F050B8C00745CC2 /* OpusCodec */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FB01F050B8C00745CC2 /* KCLOpusCodec.h */,
+				C6D48FB11F050B8C00745CC2 /* KCLOpusCodec.m */,
+				C6D48FB21F050B8C00745CC2 /* KCLOpusDecoder.h */,
+				C6D48FB31F050B8C00745CC2 /* KCLOpusDecoder.m */,
+				C6D48FB41F050B8C00745CC2 /* KCLOpusEncoder.h */,
+				C6D48FB51F050B8C00745CC2 /* KCLOpusEncoder.m */,
+				C6D48FB61F050B8C00745CC2 /* Opus1.1.4 */,
+			);
+			path = OpusCodec;
+			sourceTree = "<group>";
+		};
+		C6D48FB61F050B8C00745CC2 /* Opus1.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FB71F050B8C00745CC2 /* include */,
+				C6D48FBD1F050B8C00745CC2 /* lib */,
+			);
+			path = Opus1.1.4;
+			sourceTree = "<group>";
+		};
+		C6D48FB71F050B8C00745CC2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FB81F050B8C00745CC2 /* opus */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C6D48FB81F050B8C00745CC2 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FB91F050B8C00745CC2 /* opus.h */,
+				C6D48FBA1F050B8C00745CC2 /* opus_defines.h */,
+				C6D48FBB1F050B8C00745CC2 /* opus_multistream.h */,
+				C6D48FBC1F050B8C00745CC2 /* opus_types.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		C6D48FBD1F050B8C00745CC2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C6D48FBE1F050B8C00745CC2 /* libopus.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C68FB2EC1F03830900EEA34E /* AudioQueueUsing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68FB2FE1F03830900EEA34E /* Build configuration list for PBXNativeTarget "AudioQueueUsing" */;
+			buildPhases = (
+				C68FB2E91F03830900EEA34E /* Sources */,
+				C68FB2EA1F03830900EEA34E /* Frameworks */,
+				C68FB2EB1F03830900EEA34E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioQueueUsing;
+			productName = AudioQueueUsing;
+			productReference = C68FB2ED1F03830900EEA34E /* AudioQueueUsing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C68FB2E51F03830900EEA34E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Chentao;
+				TargetAttributes = {
+					C68FB2EC1F03830900EEA34E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3NV79J62JR;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C68FB2E81F03830900EEA34E /* Build configuration list for PBXProject "AudioQueueUsing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C68FB2E41F03830900EEA34E;
+			productRefGroup = C68FB2EE1F03830900EEA34E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C68FB2EC1F03830900EEA34E /* AudioQueueUsing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C68FB2EB1F03830900EEA34E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68FB2F71F03830900EEA34E /* Assets.xcassets in Resources */,
+				C68FB2FA1F03830900EEA34E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C68FB2E91F03830900EEA34E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D48FBF1F050B8C00745CC2 /* KCLOpusCodec.m in Sources */,
+				C68FB2F51F03830900EEA34E /* AppDelegate.m in Sources */,
+				C68FB3061F03838C00EEA34E /* AudioRecord.mm in Sources */,
+				C6D48FC01F050B8C00745CC2 /* KCLOpusDecoder.m in Sources */,
+				C68FB30C1F038A8B00EEA34E /* KCLDataReader.m in Sources */,
+				C68FB30D1F038A8B00EEA34E /* KCLDataWriter.m in Sources */,
+				C68FB3031F03832000EEA34E /* MainViewController.m in Sources */,
+				C68FB2F21F03830900EEA34E /* main.m in Sources */,
+				C6D48FC11F050B8C00745CC2 /* KCLOpusEncoder.m in Sources */,
+				C68FB3111F038BEF00EEA34E /* KCLFileManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C68FB2F81F03830900EEA34E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C68FB2F91F03830900EEA34E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C68FB2FC1F03830900EEA34E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C68FB2FD1F03830900EEA34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C68FB2FF1F03830900EEA34E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 涛 陈 (Y69R99KV32)";
+				DEVELOPMENT_TEAM = 3NV79J62JR;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/AudioQueueUsing/SoundTouch1.8.0/include",
+					"$(PROJECT_DIR)/AudioQueueUsing/OpusCodec/Opus1.1.4/include",
+				);
+				INFOPLIST_FILE = AudioQueueUsing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioQueueUsing/SoundTouch1.8.0/lib",
+					"$(PROJECT_DIR)/AudioQueueUsing/OpusCodec/Opus1.1.4/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaochong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "390d321b-c4eb-41f0-b935-72e48bd3a517";
+				PROVISIONING_PROFILE_SPECIFIER = KaoChongLive;
+			};
+			name = Debug;
+		};
+		C68FB3001F03830900EEA34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 涛 陈 (Y69R99KV32)";
+				DEVELOPMENT_TEAM = 3NV79J62JR;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/AudioQueueUsing/SoundTouch1.8.0/include",
+					"$(PROJECT_DIR)/AudioQueueUsing/OpusCodec/Opus1.1.4/include",
+				);
+				INFOPLIST_FILE = AudioQueueUsing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioQueueUsing/SoundTouch1.8.0/lib",
+					"$(PROJECT_DIR)/AudioQueueUsing/OpusCodec/Opus1.1.4/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaochong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "390d321b-c4eb-41f0-b935-72e48bd3a517";
+				PROVISIONING_PROFILE_SPECIFIER = KaoChongLive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C68FB2E81F03830900EEA34E /* Build configuration list for PBXProject "AudioQueueUsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C68FB2FC1F03830900EEA34E /* Debug */,
+				C68FB2FD1F03830900EEA34E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C68FB2FE1F03830900EEA34E /* Build configuration list for PBXNativeTarget "AudioQueueUsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C68FB2FF1F03830900EEA34E /* Debug */,
+				C68FB3001F03830900EEA34E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C68FB2E51F03830900EEA34E /* Project object */;
+}

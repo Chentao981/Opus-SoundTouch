@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AudioQueueUsing/OpusCodec/KCLOpusDecoder.m"
-            timestampString = "520340194.396117"
+            filePath = "AudioQueueUsing/KCLSoundEffect.mm"
+            timestampString = "520497521.944238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-decodeOpusData:"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-addEffectToPCMData:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

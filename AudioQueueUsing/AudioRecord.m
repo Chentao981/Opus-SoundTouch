@@ -11,9 +11,7 @@
 #import "KCLFileManager.h"
 #import "KCLOpusEncoder.h"
 #import "KCLOpusDecoder.h"
-#import <SoundTouch/SoundTouch.h>
-
-using namespace soundtouch;
+#import "KCLSoundEffect.h"
 
 @interface AudioRecord ()
 
@@ -22,11 +20,11 @@ using namespace soundtouch;
 @property (nonatomic, strong) KCLOpusEncoder *opusEncoder;
 @property (nonatomic, strong) KCLOpusDecoder *opusDecoder;
 
+@property (nonatomic, strong) KCLSoundEffect *soundEffect;
+
 @end
 
 @implementation AudioRecord {
-
-    soundtouch::SoundTouch mSoundTouch;
 }
 
 @synthesize aqc;
@@ -79,14 +77,13 @@ static void AQInputCallback(void *inUserData, AudioQueueRef inAudioQueue, AudioQ
         self.opusDecoder = [[KCLOpusDecoder alloc] initWithSampleRate:KCLOpusSampleRate_48000 numberOfChannels:KCLOpusChannelsMono frameSize:480];
         [self.opusDecoder setupOpusDecoderWithError:nil];
 
-        mSoundTouch.setSampleRate(kSamplingRate); // setSampleRate
-        mSoundTouch.setChannels(1);               //设置声音的声道
-        mSoundTouch.setTempoChange(100);          //这个就是传说中的变速不变调
-        mSoundTouch.setPitchSemiTones(0);         //设置声音的pitch (集音高变化semi-tones相比原来的音调) //男: -8 女:8
-        mSoundTouch.setRateChange(0);             //设置声音的速率
-        mSoundTouch.setSetting(SETTING_SEQUENCE_MS, 40);
-        mSoundTouch.setSetting(SETTING_SEEKWINDOW_MS, 15); //寻找帧长
-        mSoundTouch.setSetting(SETTING_OVERLAP_MS, 6);     //重叠帧长
+        self.soundEffect = [[KCLSoundEffect alloc] init];
+
+        KCLSoundEffectOption *effectOption = [[KCLSoundEffectOption alloc] init];
+        effectOption.sampleRate = kSamplingRate;
+        effectOption.channels = kNumberChannels;
+        effectOption.tempo = 1.5;
+        self.soundEffect.effectOption = effectOption;
     }
     return self;
 }
@@ -127,33 +124,13 @@ static void AQInputCallback(void *inUserData, AudioQueueRef inAudioQueue, AudioQ
 
         // Opus解码为PCM
         NSData *pcmData = [self.opusDecoder decodeOpusData:opusData];
-        
-        /////////////////////////
-        NSData *audioData = pcmData;
-
-        NSMutableData *soundTouchDatas = [[NSMutableData alloc] init];
-        if (audioData != nil) {
-            char *pcmData = (char *)audioData.bytes;
-            int pcmSize = audioData.length;
-            int nSamples = pcmSize / 2;
-            mSoundTouch.putSamples((short *)pcmData, nSamples);
-            short *samples = new short[pcmSize];
-            int numSamples = 0;
-            do {
-                memset(samples, 0, pcmSize);
-                // short samples[nSamples];
-                numSamples = mSoundTouch.receiveSamples(samples, pcmSize);
-
-                NSLog(@"numSamples:%d", numSamples);
-
-                [soundTouchDatas appendBytes:samples length:numSamples * 2];
-
-            } while (numSamples > 0);
-            delete[] samples;
-        }
 
         /////////////////////////
-        [self.pcmFileHandler writeData:soundTouchDatas];
+
+        NSData *effectAudioData = [self.soundEffect addEffectToPCMData:pcmData];
+
+        /////////////////////////
+        [self.pcmFileHandler writeData:effectAudioData];
         
         
     }

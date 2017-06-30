@@ -12,10 +12,11 @@
 		C68FB2F71F03830900EEA34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68FB2F61F03830900EEA34E /* Assets.xcassets */; };
 		C68FB2FA1F03830900EEA34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68FB2F81F03830900EEA34E /* LaunchScreen.storyboard */; };
 		C68FB3031F03832000EEA34E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3021F03832000EEA34E /* MainViewController.m */; };
-		C68FB3061F03838C00EEA34E /* AudioRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3051F03838C00EEA34E /* AudioRecord.mm */; };
+		C68FB3061F03838C00EEA34E /* AudioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3051F03838C00EEA34E /* AudioRecord.m */; };
 		C68FB30C1F038A8B00EEA34E /* KCLDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3091F038A8B00EEA34E /* KCLDataReader.m */; };
 		C68FB30D1F038A8B00EEA34E /* KCLDataWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB30B1F038A8B00EEA34E /* KCLDataWriter.m */; };
 		C68FB3111F038BEF00EEA34E /* KCLFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FB3101F038BEF00EEA34E /* KCLFileManager.m */; };
+		C69988011F061CE500715FCE /* KCLSoundEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = C69988001F061CE500715FCE /* KCLSoundEffect.mm */; };
 		C6D48FAE1F04E69000745CC2 /* libSoundTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D48FAD1F04E69000745CC2 /* libSoundTouch.a */; };
 		C6D48FBF1F050B8C00745CC2 /* KCLOpusCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D48FB11F050B8C00745CC2 /* KCLOpusCodec.m */; };
 		C6D48FC01F050B8C00745CC2 /* KCLOpusDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D48FB31F050B8C00745CC2 /* KCLOpusDecoder.m */; };
@@ -34,13 +35,15 @@
 		C68FB3011F03832000EEA34E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C68FB3021F03832000EEA34E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C68FB3041F03838C00EEA34E /* AudioRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecord.h; sourceTree = "<group>"; };
-		C68FB3051F03838C00EEA34E /* AudioRecord.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioRecord.mm; sourceTree = "<group>"; };
+		C68FB3051F03838C00EEA34E /* AudioRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecord.m; sourceTree = "<group>"; };
 		C68FB3081F038A8B00EEA34E /* KCLDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLDataReader.h; sourceTree = "<group>"; };
 		C68FB3091F038A8B00EEA34E /* KCLDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLDataReader.m; sourceTree = "<group>"; };
 		C68FB30A1F038A8B00EEA34E /* KCLDataWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLDataWriter.h; sourceTree = "<group>"; };
 		C68FB30B1F038A8B00EEA34E /* KCLDataWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLDataWriter.m; sourceTree = "<group>"; };
 		C68FB30F1F038BEF00EEA34E /* KCLFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLFileManager.h; sourceTree = "<group>"; };
 		C68FB3101F038BEF00EEA34E /* KCLFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLFileManager.m; sourceTree = "<group>"; };
+		C69987FF1F061CE500715FCE /* KCLSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLSoundEffect.h; sourceTree = "<group>"; };
+		C69988001F061CE500715FCE /* KCLSoundEffect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KCLSoundEffect.mm; sourceTree = "<group>"; };
 		C6D48FA71F04E69000745CC2 /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMDetect.h; sourceTree = "<group>"; };
 		C6D48FA81F04E69000745CC2 /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSampleBuffer.h; sourceTree = "<group>"; };
 		C6D48FA91F04E69000745CC2 /* FIFOSamplePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSamplePipe.h; sourceTree = "<group>"; };
@@ -105,7 +108,9 @@
 				C68FB2FB1F03830900EEA34E /* Info.plist */,
 				C68FB2F01F03830900EEA34E /* Supporting Files */,
 				C68FB3041F03838C00EEA34E /* AudioRecord.h */,
-				C68FB3051F03838C00EEA34E /* AudioRecord.mm */,
+				C68FB3051F03838C00EEA34E /* AudioRecord.m */,
+				C69987FF1F061CE500715FCE /* KCLSoundEffect.h */,
+				C69988001F061CE500715FCE /* KCLSoundEffect.mm */,
 			);
 			path = AudioQueueUsing;
 			sourceTree = "<group>";
@@ -298,13 +303,14 @@
 			files = (
 				C6D48FBF1F050B8C00745CC2 /* KCLOpusCodec.m in Sources */,
 				C68FB2F51F03830900EEA34E /* AppDelegate.m in Sources */,
-				C68FB3061F03838C00EEA34E /* AudioRecord.mm in Sources */,
+				C68FB3061F03838C00EEA34E /* AudioRecord.m in Sources */,
 				C6D48FC01F050B8C00745CC2 /* KCLOpusDecoder.m in Sources */,
 				C68FB30C1F038A8B00EEA34E /* KCLDataReader.m in Sources */,
 				C68FB30D1F038A8B00EEA34E /* KCLDataWriter.m in Sources */,
 				C68FB3031F03832000EEA34E /* MainViewController.m in Sources */,
 				C68FB2F21F03830900EEA34E /* main.m in Sources */,
 				C6D48FC11F050B8C00745CC2 /* KCLOpusEncoder.m in Sources */,
+				C69988011F061CE500715FCE /* KCLSoundEffect.mm in Sources */,
 				C68FB3111F038BEF00EEA34E /* KCLFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
